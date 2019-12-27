@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>MyTechlearner.com</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="container">
+	<header>
+		<nav>
+		<ul>
+			<li><a href="/index.html">Home</li>
+			<li><a href="/courses.html">Courses</li>
+			<li><a href="/about.html">About</li>
+			<li><a href="/contact.html">Contact</li>
+		</ul>
+	</nav>
+    
+		<img src="tech.jpg"/>
+		<h1> Home</h1>
+	</header>
+
+    <section id="main">
+
+    	<p> This is <em> Home </em> page of <strong> MyTechlearner.com </strong></p>
+    	<div class="login-form bordered">
+
+    	<form action="/api/login" method="post">
+    		<label for="username">Username :</label>
+    		<input type="text" name="username" id="username"/><br/>
+    		<label for="password">Password :</label>
+    		<input type="password" name="password" id="password"/><br/>
+    		<input type="checkbox" name="remember" id="remember">
+    		<label for="remember">Remember me</label><br/>
+
+    		<input type="submit" name="loginbutton" value="login"/>
+    		<input type="reset" name="cancelbutton" value="cancel">
+    	</form>
+        </div>
+        <div id="results">
+        	Here we will display all the courses.
+        </div>
+    </section>
+
+    <footer>
+    	&copy; 2020 MyTechlearner.com
+    </footer>
+ </div>
+ <script src="./server.js"></script>
+</body>
+</html>
